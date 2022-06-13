@@ -3,8 +3,14 @@ import { Button, TextField } from '@material-ui/core'
 import './boxContainer.css'
 
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function LoginBoxContainer() {
+
+  const navigate=useNavigate()
+
+    
+
   return (
 
     <Box>
@@ -24,8 +30,8 @@ function LoginBoxContainer() {
       </InputContainer>
 
       <ButtonContainer>
-          <Button variant="outlined" className='btn outlined-button'>Sign In</Button>
-          <Button variant="contained" className='btn normal-button'>Sign In With Google</Button>
+          <Button variant="outlined" className='btn outlined-button' onClick={()=>navigate('/dashboard')}>Sign In</Button>
+          <Button variant="contained" className='btn normal-button'  onClick={()=>navigate('/dashboard')}>Sign In With Google</Button>
       </ButtonContainer>
     </Box>
 
