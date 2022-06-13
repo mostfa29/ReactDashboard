@@ -1,0 +1,27 @@
+.btn{
+    color:#3786E5;
+    margin: 5% 0;
+    width: 45%;
+    padding: 2% ;
+}
+
+.outlined-button{
+    border:1px solid #3786E5 ;
+}
+
+.normal-button{
+    color:white;
+    background-color: #3786E5;
+    
+}
+
+.normal-button:hover {
+    transition-delay: 2s;
+    background-color: #3077ce;
+
+}
+
+#outlined-basic{
+    color:rgb(56, 134, 229) ;
+    border: 1px solid rgba(171, 201, 237,0.4);
+}
