@@ -5,11 +5,11 @@ import React from 'react'
 
 function NavbarElement(props) {
   return (
-       <MenuItem>
-          <ListItemIcon>
-            <SendIcon fontSize="small" />
+       <MenuItem style={{margin:'20px 0'}}>
+          <ListItemIcon style={{minWidth:'0'}}>
+           { props.icon?props.icon:<SendIcon fontSize="small" />}
           </ListItemIcon>
-          <Typography variant="inherit">A short message</Typography>
+      {props.close ? null : <Typography variant="inherit">{props.text }</Typography>}
         </MenuItem>
   )
 }

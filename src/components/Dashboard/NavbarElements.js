@@ -1,10 +1,15 @@
 import React from 'react'
 import NavbarElement from './NavbarElement'
+import {elems} from './elemsJson'
 
-function NavbarElements() {
+function NavbarElements(props) {
+
+
+
+
   return (
-      <div>
-      <NavbarElement/>
+      <div  style={{padding:'0',margin:'0'}}>
+     {elems.map((elem)=> <NavbarElement  key={elem.id} close={props.close } text={elem.title}  />)}
       </div>
   )
 }
