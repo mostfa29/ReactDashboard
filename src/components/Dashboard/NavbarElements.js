@@ -9,7 +9,7 @@ function NavbarElements(props) {
 
   return (
       <div  style={{padding:'0',margin:'0'}}>
-     {elems.map((elem)=> <NavbarElement  key={elem.id} close={props.close } text={elem.title}  />)}
+     {elems.map((elem)=> <NavbarElement  key={elem.id} close={props.close } icon={elem.icon} route={elem.route} text={elem.title}  />)}
       </div>
   )
 }

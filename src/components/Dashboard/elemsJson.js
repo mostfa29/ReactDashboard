@@ -1,23 +1,33 @@
 export const elems  = [
   {
     id: 1,
-    title: 'Yellow Pail',
-    icon:''
+    title: 'dashboard',
+    icon: 'dashboard',
+    route:'/dashboard'
   },
   {
     id: 2,
-    title: 'Green Pail',
-    icon:''
+    title: 'stock',
+    icon: 'stock',
+    route:'/dashboard/stock'
   },
     {
     id: 3,
-    title: 'Green Pail3',
-    icon:''
+    title: 'sales',
+      icon: 'sales',
+    route:'/dashbaord/sales'
   },
       {
     id: 4,
-    title: 'Green Pail 4',
-    icon:''
+    title: 'customers',
+      icon: 'customers',
+    route:'/dashbaord/customers'
+  },
+      {
+    id: 5,
+    title: 'settings',
+        icon: 'settings',
+    route:'/dashboard/settings'
   },
     
 ]

@@ -58,10 +58,13 @@ function NavBar() {
 export default NavBar
 
 const NavContainer = styled.div`
+transition:all 0.5s ease-in-out;
 top: 0;
 position: absolute;
 height:100vh;
-background-color: red;
+-webkit-box-shadow: 4px 0px 10px 0px rgba(0,0,0,0.3); 
+box-shadow: 4px 0px 10px 0px rgba(0,0,0,0.3);
+
 
 `
 
